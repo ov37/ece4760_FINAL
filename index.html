@@ -207,7 +207,7 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
 					<h1>Hardware</h1>
-					<p class="sub">Our mechanical design, communication connection, motor control, and LED strip</p>
+					<p class="sub">Our mechanical design, parallel communication connection, motor control circuit, LED strip circuit, and our power solution.</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Hardware</p>
 				</div>
 			</div>
@@ -231,8 +231,47 @@
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2>Craig Campbell</h2>
+					<h2>Parallel Communication</h2>
+					<p>We decided to connect the Raspberry Pi Zero to the PIC 32 through parallel connection with two different enable pins. To accomplish this, we sent an 8-bit RGB value through 8 GPIO ports (see Figure 1), with a data enable pin than indicated when the color for each LED was sent, and a power enable pin that indicated when to start and stop the motors (See Figure 2). This pin allowed us to start the motors upon data transfer and stop the motors once all the data has been sent and the image has completed. Each of these connections had a 330Ω resistor between the pins to limit current and protect the microcontrollers.</p>
+					<p>The power enable pin controls when the motors are turned on and off. The two motors are connected in parallel while being isolated from the PIC 32 to protect it from inductive currents. We used the motor control circuit from the ECE 4760 Lab 3 webpage. </p>
+				</div>
+			</div>
+			
+			<div class="row team-item gtco-team">
+				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/img_team_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+					</div>
+				</div>
+				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+					<h2>Motor Control</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
+					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+				</div>
+			</div>
+			
+			<div class="row team-item gtco-team">
+				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/img_team_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+					</div>
+				</div>
+				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+					<h2>LED Strip</h2>
+					<p>The DotStar LED strip was connected to the PIC 32 through a 3.3 to 5 V logic shifter, 74LS125, since the LED strip requires 5V data, and the PIC 32 only outputs 3.3V. The connections are shown in figure 5.</p>
+					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+				</div>
+			</div>
+			
+			<div class="row team-item gtco-team">
+				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/img_team_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+					</div>
+				</div>
+				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+					<h2>Power</h2>
+					<p>The Raspberry Pi, PIC 32, and LED strip were powered at 5V through a USB connected power bank. This was possible by running the LED strip at the lowest intensity, where it would draw less than one amp. The motors were also powered using a separate 5V power bank that was connected through a USB cable.</p>
 					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
 				</div>
 			</div>
