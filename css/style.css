@@ -49,7 +49,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #7ED321;
+  color: #B31B1B;
   outline: none;
   text-decoration: none;
 }
@@ -72,12 +72,12 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-moz-selection {
   color: #fff;
-  background: #7ED321;
+  background: #B31B1B;
 }
 
 ::selection {
   color: #fff;
-  background: #7ED321;
+  background: #B31B1B;
 }
 
 .gtco-nav {
@@ -259,14 +259,14 @@ h1, h2, h3, h4, h5, h6, figure {
   color: black;
 }
 .gtco-nav.scrolled ul li.active > a {
-  color: #7ED321 !important;
+  color: #B31B1B !important;
 }
 .gtco-nav.scrolled ul li.btn-cta a {
   color: #fff;
 }
 .gtco-nav.scrolled ul li.btn-cta a span {
   border: none !important;
-  background: #7ED321;
+  background: #B31B1B;
   padding: 4px 20px;
   color: #fff;
 }
@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 .gtco-cover a {
-  color: #7ED321;
+  color: #B31B1B;
 }
 .gtco-cover a:hover {
   color: white;
@@ -501,7 +501,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #gtco-about .img-shadow {
   position: relative;
-  background: #7ED321;
+  background: #B31B1B;
   width: 100%;
   float: left;
 }
@@ -588,7 +588,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-our-team .gtco-team-reverse .img-shadow,
 #gtco-our-team .gtco-team .img-shadow {
   position: relative;
-  background: #7ED321;
+  background: #B31B1B;
   width: 100%;
   float: left;
   margin-bottom: 30px;
@@ -664,11 +664,11 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   width: 72px;
   height: 2px;
-  background: #7ED321;
+  background: #B31B1B;
 }
 
 .heading-colored {
-  color: #7ED321;
+  color: #B31B1B;
 }
 
 .read-more i {
@@ -700,7 +700,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #7ED321;
+  color: #B31B1B;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -726,7 +726,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .gtco-contact-info ul li:before {
-  color: #7ed321;
+  color: #B31B1B;
   position: absolute;
   left: 0;
   top: .05em;
@@ -1116,7 +1116,7 @@ form label {
 }
 
 .btn-primary {
-  background: #7ED321;
+  background: #B31B1B;
   color: #fff;
   border: 2px solid #7ED321 !important;
 }
@@ -1126,11 +1126,11 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #7ED321;
-  border: 2px solid #7ED321;
+  color: #B31B1B;
+  border: 2px solid #B31B1B;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #7ED321;
+  background: #B31B1B;
   color: #fff;
 }
 
