@@ -311,13 +311,12 @@
 			<div class="row team-item gtco-team">
 				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
 					<div class="img-shadow">
-						<img src="images/img_team_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+						<img src="images/resize.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 					<h2>Raspberry Pi</h2>
 					<p>A Raspberry Pi 0 W was used to retrieve the images from the internet and parse and format the RGB data to send to the PIC 32 for display. All of the necessary code was condensed into a single .py file that was run wirelessly through SSH. To begin, the user can specify a url of an image and the Pi will download it and rename it to a user-specified file name. Once the file is downloaded on the Pi, it will prompt the user for a filename to display using theDotStar strip. After opening the file, the program uses the Pillow, a fork of the Python Image Library (PIL) to resize the image to fit the 144 pixel height constraint. Then, the program iterates over all the pixels in the image and saves their scaled RGB data. After saving all the RGB data, a starting LED sequence is sent to the PIC to visually indicate to the photographer to start their exposure. Once one column’s worth of data is transferred the data enable pin goes high then low, to signal that the data lines are all valid values for the PIC to read. Similar to on the PIC, once all this data is transmitted, the process has to be repeated for as many columns as the image has, after which the power enable line will be set low and the PIC will stop the motors.</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
 				</div>
 			</div>
 
@@ -336,13 +335,13 @@
 			<div class="row team-item gtco-team-reverse">
 				<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
 					<div class="img-shadow">
-						<img src="images/img_team_1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+						<img src="images/shark.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
 					</div>
 				</div>
 				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
 					<h2>Results</h2>
 					<p>The DotStar Light Painter was able to produce images effectively. However, because we had to reduce the color from 24 total RGB bits to 8 total RGB bits, some color accuracy is lost. Additionally, because we only had 144 LEDs per meter, resolution was also lost (depending upon the original resolution of the image). To increase the resolution, another LED strip could be added. Also, the LED strip could have performed at a higher speed if we had the Raspberry Pi send all the image data at once, however, since the Raspberry Pi sends the data column by column, there is a bit of delay. We did reduce the delay between each column sent from 0.5 seconds to .05 seconds, which shrunk the width of the image as shown below.</p>
-					<p>But, sending data column by column with our slow motors worked to our advantage. The slow speed of the motors was due to too much stress from the torque of the box and strip, so motors with a higher torque tolerance would also have allowed us to better tune the images. Lastly, our mechanical design could have been sturdier. As you can see in the images, the cart rocked side to side as it moved, creating warped images. This could have been prevented through a sturdier design and better materials.</p>
+					<p>However, sending data column by column with our slow motors worked to our advantage. The slow speed of the motors was due to too much stress from the torque of the box and strip, so motors with a higher torque tolerance would also have allowed us to better tune the images. Lastly, our mechanical design could have been sturdier. As you can see in the images, the cart rocked side to side as it moved, creating warped images. This could have been prevented through a sturdier design and better materials.</p>
 				</div>
 			</div>
 		</div>
