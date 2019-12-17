@@ -240,7 +240,7 @@
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 					<h2>Parallel Communication</h2>
-					<p>We decided to connect the Raspberry Pi Zero to the PIC 32 through parallel connection with two different enable pins. To accomplish this, we sent an 8-bit RGB value through 8 GPIO ports (see Figure 1), with a data enable pin than indicated when the color for each LED was sent, and a power enable pin that indicated when to start and stop the motors (See Figure 2). This pin allowed us to start the motors upon data transfer and stop the motors once all the data has been sent and the image has completed. Each of these connections had a 330Ω resistor between the pins to limit current and protect the microcontrollers.</p>
+					<p>We decided to connect the Raspberry Pi Zero to the PIC 32 through parallel connection with two different enable pins. To accomplish this, we sent an 8-bit RGB value through 8 GPIO ports, with a data enable pin than indicated when the color for each LED was sent, and a power enable pin that indicated when to start and stop the motors. This pin allowed us to start the motors upon data transfer and stop the motors once all the data has been sent and the image has completed. Each of these connections had a 330Ω resistor between the pins to limit current and protect the microcontrollers.</p>
 					<p>The power enable pin controls when the motors are turned on and off. The two motors are connected in parallel while being isolated from the PIC 32 to protect it from inductive currents. We used the motor control circuit from the ECE 4760 Lab 3 webpage. </p>
 				</div>
 			</div>
@@ -250,7 +250,7 @@
 					<div class="img-shadow">
 						<figure>
 						<img src="images/Motors.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-							<figcaption><strong> Motor Control Circuit</figcaption>
+							<figcaption><strong> Motor Control Circuit</strong></figcaption>
 								</figure>
 					</div>
 				</div>
