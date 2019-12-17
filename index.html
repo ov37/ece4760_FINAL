@@ -91,7 +91,7 @@
 					<div class="display-t">
 						<div class="display-tc">
 							<h1 class="animate-box" data-animate-effect="fadeIn">DotStar Light Painter</h1>
-							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
+							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://youtu.be/1LS0P5ddWkc" class="popup-youtube"><i class="icon-controller-play"></i></a></p>
 						</div>
 					</div>
 				</div>
@@ -343,25 +343,11 @@
 					</div>
 				</div>
 				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
-					<h2>Jeff Finley</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+					<h2>Results</h2>
+					<p>The DotStar Light Painter was able to produce images effectively. However, because we had to reduce the color from 24 total RGB bits to 8 total RGB bits, some color accuracy is lost. Additionally, because we only had 144 LEDs per meter, resolution was also lost (depending upon the original resolution of the image). To increase the resolution, another LED strip could be added. Also, the LED strip could have performed at a higher speed if we had the Raspberry Pi send all the image data at once, however, since the Raspberry Pi sends the data column by column, there is a bit of delay. We did reduce the delay between each column sent from 0.5 seconds to .05 seconds, which shrunk the width of the image as shown below.</p>
+					<p>But, sending data column by column with our slow motors worked to our advantage. The slow speed of the motors was due to too much stress from the torque of the box and strip, so motors with a higher torque tolerance would also have allowed us to better tune the images. Lastly, our mechanical design could have been sturdier. As you can see in the images, the cart rocked side to side as it moved, creating warped images. This could have been prevented through a sturdier design and better materials.</p>
 				</div>
 			</div>
-
-			<div class="row team-item gtco-team">
-				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
-					<div class="img-shadow">
-						<img src="images/img_team_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					</div>
-				</div>
-				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2>Craig Campbell</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
-				</div>
-			</div>
-
 		</div>
 	</section>
 		
@@ -369,8 +355,8 @@
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-					<h1>Our Team</h1>
-					<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h1>Conclusion</h1>
+					<p class="sub">We are very pleased with how our project turned out. We successfully programmed and built a mechanism to draw any image with a LED strip and a long exposure camera. We are pleasantly surprised at the definition of the images we were able to draw with our limited resolution.</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Conclusion</p>
 				</div>
 			</div>
@@ -381,9 +367,8 @@
 					</div>
 				</div>
 				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
-					<h2>Jeff Finley</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+					<h2>Future Considerations</h2>
+					<p>In future iterations of this project, the biggest thing we would like to improve is the mechanical design. Although our design was satisfactory, there were problems with the LED strip shaking while the motors were on, due to the high center of gravity. Additionally, stronger motors would be necessary, as we ended up blowing out our cheap DC motors from the load of the box and strip. Another interesting improvement would be using more LEDs to improve the resolution of the image, although then the machine would be over two meters tall, which could cause maneuverability issues indoors.</p>
 				</div>
 			</div>
 
@@ -394,12 +379,22 @@
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2>Craig Campbell</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+					<h2>Intellectual Property</h2>
+					<p>We did reuse some code from Bruce Land’s tutorial on “Driving Pixel Display Strips.” This code is publically available to us on his course website and we have clearly stated the two functions of his that we incorporate into our code. We are not seeking any patent copyright protection on our project design at this time. Additionally, some of the images we used to display on the strip are not our own. However, the long exposure pictures we took represent our own artwork, and we do not intend to use these images for any commercial purpose, so the use of copyrighted images in our project is legally acceptable.</p>
 				</div>
 			</div>
 
+			<div class="row team-item gtco-team-reverse">
+				<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
+					<div class="img-shadow">
+						<img src="images/img_team_1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+					</div>
+				</div>
+				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
+					<h2>Ethics, Safety and the Law</h2>
+					<p>Our project is in accordance with IEEE Code of Ethics, as well as all legal standards. The motors on our project operate at a slow speed and the intensity of the LEDs are low enough that our project could not cause any conceivable health or safety risk.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
