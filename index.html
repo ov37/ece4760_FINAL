@@ -219,7 +219,7 @@
 					<div class="img-shadow">
 						<figure>
 						<img src="images/Mechanical.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						<figcaption><strong> Left:</strong> Mechanical Design <br><strong>Right:</strong>Tissue paper layering test showing the result and the number of layers used.</figcaption>
+						<figcaption><strong> Left:</strong> Mechanical design <br><strong>Right: </strong>Tissue paper layering test showing the result and the number of layers used.</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -235,7 +235,7 @@
 					<div class="img-shadow">
 						<figure>
 						<img src="images/Time.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-							<figcaption><strong> Top:</strong>The color green sent through the 8-bit RGB ports<br><strong>Bottom:</strong>Parallel connection data lines, showing that the first LED in the first column will be purple.</figcaption>
+							<figcaption><strong> Top: </strong>The color green sent through the 8-bit RGB ports<br><strong>Bottom: </strong>Parallel connection data lines, showing that the first LED in the first column will be purple.</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -314,7 +314,7 @@
 					<div class="img-shadow">
 						<figure>
 							<img src="images/compare.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-							<figcaption><strong> Left:</strong> The image uploaded to the Pi <strong>Right:</strong> The image uploaded to the PIC</figcaption>
+							<figcaption><strong> Left:</strong> The image uploaded to the Pi <br><strong>Right:</strong> The image uploaded to the PIC</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -348,11 +348,16 @@
 				</div>
 				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
 					<h2>Results</h2>
-					<p>The DotStar Light Painter was able to produce images effectively. However, because we had to reduce the color from 24 total RGB bits to 8 total RGB bits, some color accuracy is lost. Additionally, because we only had 144 LEDs per meter, resolution was also lost (depending upon the original resolution of the image). To increase the resolution, another LED strip could be added. Also, the LED strip could have performed at a higher speed if we had the Raspberry Pi send all the image data at once, however, since the Raspberry Pi sends the data column by column, there is a bit of delay. We did reduce the delay between each column sent from 0.5 seconds to .05 seconds, which shrunk the width of the image as shown below.</p>
+					<p>The DotStar Light Painter was able to produce images effectively. However, because we had to reduce the color from 24 total RGB bits to 8 total RGB bits, some color accuracy is lost. Additionally, because we only had 144 LEDs per meter, resolution was also lost (depending upon the original resolution of the image). To increase the resolution, another LED strip could be added. Also, the LED strip could have performed at a higher speed if we had the Raspberry Pi send all the image data at once, however, since the Raspberry Pi sends the data column by column, there is a bit of delay. We did reduce the delay between each column sent from 0.5 seconds to .05 seconds, which shrunk the width of the image.</p>
 					<p>However, sending data column by column with our slow motors worked to our advantage. The slow speed of the motors was due to too much stress from the torque of the box and strip, so motors with a higher torque tolerance would also have allowed us to better tune the images. Lastly, our mechanical design could have been sturdier. As you can see in the images, the cart rocked side to side as it moved, creating warped images. This could have been prevented through a sturdier design and better materials.</p>
 				</div>
 			</div>
 			<div class="row team-item gtco-team-reverse">
+				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/mountains.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+					</div>
+				</div>
 				<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
 					<div class="img-shadow">
 						<img src="images/shark.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
@@ -414,10 +419,8 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
 					<h1>Appendix C</h1>
-					<p class="sub">Schematic.</p>
-					<figure>
 					<img src="images/Schematic.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					</figure>
+					<p class="sub"> </p>
 				</div>
 			</div>
 			<div class="row row-pb-md">
@@ -541,14 +544,9 @@
 					    <td align="left"><a href="https://pillow.readthedocs.io/" class="external">Python Imaging Library</a></td>
 						     
 					  </tr>
-						<tr>
-					    <td align="left">Raspberry Pi WiFi Access Point </td>
-					    <td align="left"><a href="https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/preparation" class="external">RPI0W WIFI</a></td>
-						     
-					  </tr>
-						<tr>
+					<tr>
 					    <td align="left">Project Background </td>
-					    <td align="left"><a href="https://cdn.hackaday.io/files/19007813195488/microPainterFinalReport.pdf" class="external">MicroPainter</a></td>
+					    <td align="left"><a href="https://learn.adafruit.com/dotstar-pi-painter/overview" class="external">Adafruit</a></td>
 						     
 					  </tr>
 					</table>
